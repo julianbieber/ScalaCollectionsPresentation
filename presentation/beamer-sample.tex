@@ -1,0 +1,229 @@
+\documentclass[xcolor=svgnames]{beamer}
+% ,handout
+
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+
+\usepackage[utf8]    {inputenc}
+\usepackage[T1]      {fontenc}
+\usepackage[english] {babel}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{beamerleanprogress}
+
+\title
+[Scala Collections \hspace{2em}]
+{Scala Collections \\ How many ways are there to say \\ "Multiple Things"}
+
+\author
+[Julian Bieber]
+{Julian Bieber}
+
+\date
+{\today}
+
+
+\begin{document}
+
+    \maketitle
+
+    \section{Collections Trivia}
+
+    \begin{frame}[fragile] % example1
+    {Sequence}
+        \begin{Verbatim}[formatcom=\sffamily]
+val sequence = Seq(1, 2, 3, 4, 5)
+println(sequence)
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+List(1, 2, 3, 4, 5)
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example2
+    {Stream}
+        \begin{Verbatim}[formatcom=\sffamily]
+val stream = Stream(1, 2, 3, 4, 5)
+println(stream)
+val seq: Seq[Int] = stream.toSeq
+seq.map(println)
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+Stream(1, ?)
+1
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example3
+    {Stream Consumption}
+        \begin{Verbatim}[formatcom=\sffamily]
+val stream = Stream(1, 2, 3)
+stream.foreach(println)
+val streamPlusOne = stream.map(_ + 1)
+println(stream.size)
+streamPlusOne.foreach(println)
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+1
+2
+3
+3
+2
+3
+4
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example4
+    {Sequence Order of Execution}
+        \begin{Verbatim}[formatcom=\sffamily]
+Seq(1, 2, 3).map{ i =>
+    println("method1", i)
+    i
+}.map{ i =>
+    println("method2", i)
+    i
+}
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+(method1,1)
+(method1,2)
+(method1,3)
+(method2,1)
+(method2,2)
+(method2,3)
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example5
+    {Stream Order of Execution}
+        \begin{Verbatim}[formatcom=\sffamily]
+Stream(1, 2, 3).map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+(method1,1)
+(method2,1)
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example6
+    {Stream.force?}
+        \begin{Verbatim}[formatcom=\sffamily]
+Stream(1, 2, 3).map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}.force
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+(method1,1)
+(method2,1)
+(method1,2)
+(method2,2)
+(method1,3)
+(method2,3)
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example7
+    {Infinite Streams}
+        \begin{Verbatim}[formatcom=\sffamily]
+val stream = Stream.from(1).map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}
+
+println(stream.sum)
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+...
+(method1,2517132)
+(method2,2517132)
+
+Exception: java.lang.OutOfMemoryError
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example8
+    {Infinite Iterators}
+        \begin{Verbatim}[formatcom=\sffamily]
+val iterator = Stream.from(1).map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}.toIterator
+
+println(iterator.sum)
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+...
+(method1,2517132)
+(method2,2517132)
+...
+        \end{Verbatim}
+    \end{frame}
+
+    \section{Type Hierarchy}
+
+    \section{CanBuildFrom}
+
+    \section{Views}
+
+    \section{Benchmarks}
+
+\end{document}
+

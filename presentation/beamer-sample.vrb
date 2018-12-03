@@ -1,0 +1,23 @@
+\frametitle{Infinite Iterators}
+\begin{Verbatim}[formatcom=\sffamily]
+val iterator = Stream.from(1).map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}.toIterator
+
+println(iterator.sum)
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+...
+(method1,2517132)
+(method2,2517132)
+...
+        \end{Verbatim}
