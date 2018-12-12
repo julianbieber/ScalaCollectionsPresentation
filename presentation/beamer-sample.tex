@@ -12,6 +12,8 @@
 \usepackage{amsmath,amsfonts,graphicx}
 \usepackage{beamerleanprogress}
 
+\graphicspath{{./}}
+
 \title
 [Scala Collections \hspace{2em}]
 {Scala Collections \\ How many ways are there to say \\ "Multiple Things"}
@@ -29,6 +31,13 @@
     \maketitle
 
     \section{Collections Trivia}
+    \begin{frame}
+    {Collections Trivia}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{trivia.pdf}
+        \end{figure}
+    \end{frame}
 
     \begin{frame}[fragile] % example1
     {Sequence}
@@ -219,11 +228,99 @@ println(iterator.sum)
 
     \section{Type Hierarchy}
 
-    \section{CanBuildFrom}
+    \begin{frame}
+    {Type Hierarchy}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{hierarchy.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}[fragile]
+    {Immutabe}
+        \begin{figure}
+            \centering
+\includegraphics[width=0.9\textwidth]{collections-immutable-diagram.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {Array}
+        \begin{itemize}
+            \item slow prepend/append
+            \item very fast random access ($O(1)$)
+            \item contiguous locality
+            \item strict
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+    {Vector}
+        \begin{itemize}
+            \item fast random access ($O(c)$)
+            \item fast append/prepend ($O(c)$)
+            \item good but not contiguous locality
+            \item strict
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+    {List}
+        \begin{itemize}
+            \item very fast prepend ($O(1)$)
+            \item very fast head access ($O(1)$)
+            \item single linked $\Rightarrow$ slow random access ($O(n)$)
+            \item bad locality
+            \item strict
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+    {Stream}
+        \begin{itemize}
+            \item List with lazy tail
+            \item while something holds the head it can not be GC'ed
+            \item will not be consumed by iterating (while something hold the head)
+            \item not strict
+        \end{itemize}
+    \end{frame}
 
     \section{Views}
 
+    \begin{frame}[fragile]
+    {Concept of a View}
+        \begin{itemize}
+            \item calling view on a collection makes it non strict
+            \item modifications can be applied as usual (map, filter, \textellipsis)
+            \item however they are not evaluated yet \pause
+            \item force applies the changes
+            \item better memory foodprint
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]
+    {Scala SeqView}
+        \begin{itemize}
+            \item Signature: SeqView[+A, +Coll]
+            \item Represents a view to Coll[+A]
+            \item chaining maps without creating new collections
+            \item $\Rightarrow$ less memory consumption \pause
+            \item $\Rightarrow$ less GC activity \pause
+            \item $\Rightarrow$ faster
+        \end{itemize}
+    \end{frame}
+
     \section{Benchmarks}
+
+    \begin{frame}
+    {Benchmarks}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{cats.pdf}
+        \end{figure}
+    \end{frame}
+
+
 
 \end{document}
 

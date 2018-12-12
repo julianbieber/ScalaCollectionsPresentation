@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <hpx/include/parallel_transform.hpp>
+#include <hpx/hpx_init.hpp>
 #include "Benchmark.h"
 #include "VectorView.h"
-#include <hpx/hpx_main.hpp>
+//#include <hpx/hpx_main.hpp>
 
 std::vector<long> generate_vector(size_t size) {
     std::vector<long> vector;
@@ -70,16 +71,33 @@ void par_map(const std::vector<long>& vector) {
 }
 
 void print_result(const BenchmarkResult& result) {
-    std::cout << result.name << " " << result.min << ", " << result.max << ", " << result.average << "\n";
+    std::cout << "| " << result.name << " | " << result.min << " | " << result.max << " | " << result.mean << " | " << result.variance << " | " << result.standardDeviation << " | \n";
 }
 
-int main() {
-    Benchmark<long> benchmark(1000);
+int hpx_main(int argc, char ** argv) {
+    Benchmark<long> benchmark(100);
 
-    print_result(benchmark.run("foreach", [](){ return generate_vector(100000000);}, foreach));
-    print_result(benchmark.run("map", [](){ return generate_vector(100000000);}, transform));
-    print_result(benchmark.run("view map", [](){ return generate_vector(100000000);}, view_transform));
-    print_result(benchmark.run("view map one transformation", [](){ return generate_vector(100000000);}, view_transform_one));
-    print_result(benchmark.run("par map", [](){ return generate_vector(100000000);}, par_map));
+    /*print_result(benchmark.run("foreach 1000000", [](){ return generate_vector(1000000);}, foreach));
+    print_result(benchmark.run("foreach 10000000", [](){ return generate_vector(10000000);}, foreach));
+    print_result(benchmark.run("foreach 100000000", [](){ return generate_vector(100000000);}, foreach));
+    print_result(benchmark.run("map 1000000", [](){ return generate_vector(1000000);}, transform));
+    print_result(benchmark.run("map 10000000", [](){ return generate_vector(10000000);}, transform));
+    print_result(benchmark.run("map 100000000", [](){ return generate_vector(100000000);}, transform));
+    print_result(benchmark.run("view map 1000000", [](){ return generate_vector(1000000);}, view_transform));
+    print_result(benchmark.run("view map 10000000", [](){ return generate_vector(10000000);}, view_transform));
+    print_result(benchmark.run("view map 100000000", [](){ return generate_vector(100000000);}, view_transform));
+    print_result(benchmark.run("view map one transformation 1000000", [](){ return generate_vector(1000000);}, view_transform_one));
+    print_result(benchmark.run("view map one transformation 10000000", [](){ return generate_vector(10000000);}, view_transform_one));
+    print_result(benchmark.run("view map one transformation 100000000", [](){ return generate_vector(100000000);}, view_transform_one));
+    */print_result(benchmark.run("par map 1000000", [](){ return generate_vector(1000000);}, par_map));
+    print_result(benchmark.run("par map 10000000", [](){ return generate_vector(10000000);}, par_map));
+    print_result(benchmark.run("par map 100000000", [](){ return generate_vector(100000000);}, par_map));
+    return 0;
+}
+
+int main(int argc, char ** argv) {
+    std::vector<std::string> cfg;
+    cfg.push_back("hpx.os_threads=all");
+    hpx::init(argc, argv, cfg);
     return 0;
 }

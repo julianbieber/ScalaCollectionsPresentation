@@ -32,6 +32,10 @@ object Main extends App {
     val result = iterable.map(f)
   }
 
+  def mapStream[A, B](f: A => B)(iterable: Iterable[A]): Unit = {
+    val result = iterable.map(f).asInstanceOf[Stream[A]].force
+  }
+
   def viewMap[A](f: A => A)(iterable: Iterable[A]): Unit = {
     val results = iterable.view
       .map(f)
@@ -43,19 +47,26 @@ object Main extends App {
   }
 
   def viewMapStream[A](f: A => A)(iterable: Iterable[A]): Unit = {
-    val results = iterable.asInstanceOf[Stream[A]]
+    val results = iterable.view
       .map(f)
       .map(f)
       .map(f)
       .map(f)
       .map(f)
-      .force
+      .force.asInstanceOf[Stream[A]].force
   }
 
   def viewMapOne[A](f: A => A)(iterable: Iterable[A]): Unit = {
     val results = iterable.view
       .map(f)
       .force
+  }
+
+  def viewMapOneStream[A](f: A => A)(iterable: Iterable[A]): Unit = {
+    val results = iterable.view
+      .map(f)
+      .force.asInstanceOf[Stream[A]].force
+
   }
 
   def parMap[A, B](f: A => B)(iterable: Iterable[A]): Unit = {
@@ -66,7 +77,7 @@ object Main extends App {
     println(s"$name 1000000    ${new Benchmark[A](buildIterable(1000000), f).run()}")
     println(s"$name 10000000   ${new Benchmark[A](buildIterable(10000000), f).run()}")
   }
-/*
+
   runBenchmark("List[Int].foreach", buildList({ i: Int => i }, _), iteration)
   runBenchmark("Array[Int].foreach", buildArray({ i: Int => i }, _), iteration)
   runBenchmark("Vector[Int].foreach", buildVector({ i: Int => i }, _), iteration)
@@ -76,23 +87,25 @@ object Main extends App {
   runBenchmark("List[Int].map", buildList({ i: Int => i }, _), map[Int, Int](a => a + 1))
   runBenchmark("Array[Int].map", buildArray({ i: Int => i }, _), map[Int, Int](a => a + 1))
   runBenchmark("Vector[Int].map", buildVector({ i: Int => i }, _), map[Int, Int](a => a + 1))
-  runBenchmark("Stream[Int].map", buildStream({ i: Int => i }, _), map[Int, Int](a => a + 1))
+  runBenchmark("Stream[Int].map", buildStream({ i: Int => i }, _), mapStream[Int, Int](a => a + 1))
   println()
 
   runBenchmark("List[Int].viewMap one transformation", buildList({ i: Int => i }, _), viewMapOne[Int](a => a + 1))
   runBenchmark("Array[Int].viewMap one transformation", buildArray({ i: Int => i }, _), viewMapOne[Int](a => a + 1))
   runBenchmark("Vector[Int].viewMap one transformation", buildVector({ i: Int => i }, _), viewMapOne[Int](a => a + 1))
   runBenchmark("Stream[Int].viewMap one transformation", buildStream({ i: Int => i }, _), viewMapOne[Int](a => a + 1))
+  runBenchmark("Stream[Int].viewMap one transformation", buildStream({ i: Int => i }, _), viewMapOneStream[Int](a => a + 1))
   println()
 
   runBenchmark("List[Int].parMap", buildList({ i: Int => i }, _), parMap[Int, Int](a => a + 1))
   runBenchmark("Array[Int].parMap", buildArray({ i: Int => i }, _), parMap[Int, Int](a => a + 1))
   runBenchmark("Vector[Int].parMap", buildVector({ i: Int => i }, _), parMap[Int, Int](a => a + 1))
   runBenchmark("Stream[Int].parMap", buildStream({ i: Int => i }, _), parMap[Int, Int](a => a + 1))
-  */
-  //runBenchmark("List[Int].viewMap", buildList({ i: Int => i }, _), viewMap[Int](a => a + 1))
-  //runBenchmark("Array[Int].viewMap", buildArray({ i: Int => i }, _), viewMap[Int](a => a + 1))
-  //runBenchmark("Vector[Int].viewMap", buildVector({ i: Int => i }, _), viewMap[Int](a => a + 1))
+  println()
+
+  runBenchmark("List[Int].viewMap", buildList({ i: Int => i }, _), viewMap[Int](a => a + 1))
+  runBenchmark("Array[Int].viewMap", buildArray({ i: Int => i }, _), viewMap[Int](a => a + 1))
+  runBenchmark("Vector[Int].viewMap", buildVector({ i: Int => i }, _), viewMap[Int](a => a + 1))
   runBenchmark("Stream[Int].viewMap", buildStream({ i: Int => i }, _), viewMapStream[Int](a => a + 1))
 
 

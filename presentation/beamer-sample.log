@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.25)  3 DEC 2018 09:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.25)  13 DEC 2018 00:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -788,20 +788,20 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 ) (./beamer-sample.aux)
 \openout1 = `beamer-sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -869,7 +869,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (/opt/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -879,9 +879,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
 (./beamer-sample.out) (./beamer-sample.out)
 \@outlinefile=\write6
@@ -912,140 +912,201 @@ Dictionary: translator-numbers-dictionary, Language: English
 y-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./beamer-sample.nav)
-Overfull \hbox (10.88pt too wide) in paragraph at lines 27--27
+Overfull \hbox (10.88pt too wide) in paragraph at lines 29--29
  []|[]  
  []
 
 
-Overfull \hbox (100.94725pt too wide) in paragraph at lines 27--27
+Overfull \hbox (41.56651pt too wide) in paragraph at lines 29--29
  [][]  
  []
 
 [1
 
 {/opt/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout4 = `beamer-sample.vrb'.
+./beamer-sample.tex:40: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.40     \end{frame}
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:40: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.40     \end{frame}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:40: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.40     \end{frame}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:40: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.40     \end{frame}
+                    
+I'm ignoring this, since I wasn't doing a \csname.
 
 
-(./beamer-sample.vrb
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 2.
- (/opt/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-))
+./beamer-sample.tex:40: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40     \end{frame}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<trivia.pdf, id=47, 195.129pt x 109.8504pt>
+File: trivia.pdf Graphic file (type pdf)
+<use trivia.pdf>
+Package pdftex.def Info: trivia.pdf  used on input line 40.
+(pdftex.def)             Requested size: 195.12851pt x 109.85011pt.
+
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [2
 
-] (./beamer-sample.vrb)
+ <./trivia.pdf>]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 2.
+
+(/opt/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [3
 
-]
-\openout4 = `beamer-sample.vrb'.
-
- (./beamer-sample.vrb)
+] (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [4
 
-] (./beamer-sample.vrb)
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [5
 
-]
-\openout4 = `beamer-sample.vrb'.
-
- (./beamer-sample.vrb)
+] (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [6
 
-] (./beamer-sample.vrb)
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [7
 
-]
-\openout4 = `beamer-sample.vrb'.
-
- (./beamer-sample.vrb)
+] (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [8
 
-] (./beamer-sample.vrb)
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [9
 
-]
-\openout4 = `beamer-sample.vrb'.
-
- (./beamer-sample.vrb)
+] (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [10
 
-] (./beamer-sample.vrb)
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [11
 
-]
-\openout4 = `beamer-sample.vrb'.
-
- (./beamer-sample.vrb)
+] (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [12
 
-] (./beamer-sample.vrb)
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [13
 
-]
-\openout4 = `beamer-sample.vrb'.
-
- (./beamer-sample.vrb)
+] (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [14
 
-] (./beamer-sample.vrb)
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
 [15
+
+] (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[16
 
 ]
 \openout4 = `beamer-sample.vrb'.
@@ -1055,16 +1116,238 @@ Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
-[16
+[17
 
 ] (./beamer-sample.vrb)
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
-[17
+[18
 
 ]
+./beamer-sample.tex:237: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.237     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:237: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.237     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:237: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.237     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:237: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.237     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:237: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+pdfTeX warning: pdflatex (file ./hierarchy.pdf): PDF inclusion: found PDF versi
+on <1.7>, but at most version <1.5> allowed
+<hierarchy.pdf, id=233, 144.54pt x 139.722pt>
+File: hierarchy.pdf Graphic file (type pdf)
+<use hierarchy.pdf>
+Package pdftex.def Info: hierarchy.pdf  used on input line 237.
+(pdftex.def)             Requested size: 144.53963pt x 139.72165pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[19
+
+ <./hierarchy.pdf>]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb
+<collections-immutable-diagram.pdf, id=250, 242.98679pt x 188.07263pt>
+File: collections-immutable-diagram.pdf Graphic file (type pdf)
+<use collections-immutable-diagram.pdf>
+Package pdftex.def Info: collections-immutable-diagram.pdf  used on input line 
+4.
+(pdftex.def)             Requested size: 276.559pt x 214.07211pt.
+)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[20
+
+ <./collections-immutable-diagram.pdf>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 255.
+
+(/opt/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 255.
+
+(/opt/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[21
+
+]
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[22
+
+]
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[23
+
+]
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[24
+
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[25
+
+] (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[26
+
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[27
+
+] (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[28
+
+] (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[29
+
+]
+./beamer-sample.tex:321: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.321     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:321: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.321     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:321: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.321     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:321: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.321     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:321: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<cats.pdf, id=362, 120.45pt x 80.2197pt>
+File: cats.pdf Graphic file (type pdf)
+<use cats.pdf>
+Package pdftex.def Info: cats.pdf  used on input line 321.
+(pdftex.def)             Requested size: 120.44969pt x 80.2195pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[30
+
+ <./cats.pdf>]
 \tf@nav=\write7
 \openout7 = `beamer-sample.nav'.
 
@@ -1074,35 +1357,38 @@ Overfull \hbox (10.88pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `beamer-sample.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./beamer-sample.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `beamer-sample.out' has not changed.
-(rerunfilecheck)             Checksum: 1A23DDF4CBB20485CF9E586C23445B6B;53.
+(rerunfilecheck)             Checksum: 8DA7B1A80574D60E12FDC787BA453489;187.
  ) 
 Here is how much of TeX's memory you used:
- 21077 strings out of 494085
- 405563 string characters out of 6165330
- 499977 words of memory out of 5000000
- 24233 multiletter control sequences out of 15000+600000
- 11539 words of font info for 26 fonts, out of 8000000 for 9000
+ 21253 strings out of 494085
+ 408580 string characters out of 6165330
+ 500982 words of memory out of 5000000
+ 24346 multiletter control sequences out of 15000+600000
+ 15887 words of font info for 43 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  50i,16n,76p,780b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0600.60
-0pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0500.
-480pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss109
-5.600pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1
+ </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.60
+0pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0600.
+600pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss050
+0.480pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1
 200.600pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecs
 x0500.480pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/e
 css0600.600pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecsx1095.600pk> </home/julian/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecsx1440.600pk>
-Output written on beamer-sample.pdf (17 pages, 58626 bytes).
+ec/ecsx1440.600pk></opt/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></opt/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></opt/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></op
+t/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on beamer-sample.pdf (30 pages, 530561 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
