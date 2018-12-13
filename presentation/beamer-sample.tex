@@ -138,12 +138,11 @@ Stream(1, 2, 3).map{ i =>
         \end{Verbatim}
 
         \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-(method1,1)
-(method2,1)
         \pause
 
         \begin{Verbatim}[formatcom=\sffamily]
-
+(method1,1)
+(method2,1)
         \end{Verbatim}
     \end{frame}
 
@@ -310,6 +309,95 @@ println(iterator.sum)
         \end{itemize}
     \end{frame}
 
+    \begin{frame}[fragile] % example8
+    {SeqView}
+        \begin{Verbatim}[formatcom=\sffamily]
+val seq: Seq[Int] = Seq(1, 2, 3).view.map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}.force
+        \end{Verbatim}
+
+        \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+        \pause
+
+        \begin{Verbatim}[formatcom=\sffamily]
+(method1,1)
+(method2,1)
+(method1,2)
+(method2,2)
+(method1,3)
+(method2,3)
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example8
+    {SeqView}
+        \begin{Verbatim}[formatcom=\sffamily]
+case class CaseClass(member: Int) {
+  println("CaseClass", member)
+}
+println(function(Seq(1, 2, 3).view.map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}))
+
+def function(seq: Seq[Int]): Seq[CaseClass] = {
+  seq.map(CaseClass)
+}
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example8
+    {SeqView}
+        \begin{Verbatim}[formatcom=\sffamily]
+SeqViewMMM(...)
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example8
+    {SeqView}
+        \begin{Verbatim}[formatcom=\sffamily]
+case class CaseClass(member: Int) {
+  println("CaseClass", member)
+}
+println(function(Seq(1, 2, 3).view.map{ i =>
+  println("method1", i)
+  i
+}.map{ i =>
+  println("method2", i)
+  i
+}).view.force)
+
+def function(seq: Seq[Int]): Seq[CaseClass] = {
+seq.map(CaseClass)
+}
+        \end{Verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile] % example8
+    {SeqView}
+        \begin{Verbatim}[formatcom=\sffamily]
+(method1,1)
+(method2,1)
+(CaseClass,1)
+(method1,2)
+(method2,2)
+(CaseClass,2)
+(method1,3)
+(method2,3)
+(CaseClass,3)
+List(CaseClass(1), CaseClass(2), CaseClass(3))
+        \end{Verbatim}
+    \end{frame}
+
     \section{Benchmarks}
 
     \begin{frame}
@@ -320,7 +408,93 @@ println(iterator.sum)
         \end{figure}
     \end{frame}
 
+    \begin{frame}
+    {Forech with Baseline}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{foreach_c.pdf}
+        \end{figure}
+    \end{frame}
 
+    \begin{frame}
+    {Map with Baseline}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{map_c.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {View map with Baseline}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{viewmap_c.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {View map one tranfsormation with Baseline}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{viewmap_one_c.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {Parmap with Baseline}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{parmap_c.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {Foreach Scala collections}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{foreach.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {Map Scala collections}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{map.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {View map Scala collections}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{viewmap.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {View map one transformation Scala collections}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{viewmap_one.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {ParMap Scala collections}
+        \begin{figure}
+            \centering
+            \includegraphics[\textwidth]{parmap.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+    {Further Reading}
+        \begin{itemize}
+            \item http://www.lihaoyi.com/post/BenchmarkingScalaCollections
+            \item https://github.com/julianbieber/ScalaCollectionsPresentation
+        \end{itemize}
+    \end{frame}
 
 \end{document}
 

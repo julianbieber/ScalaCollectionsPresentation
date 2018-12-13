@@ -8,6 +8,6 @@ object View1 extends App {
   }.map{ i =>
     println("method2", i)
     i
-  }
+  }.force
 
 }

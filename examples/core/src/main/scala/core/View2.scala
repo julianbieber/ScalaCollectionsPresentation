@@ -8,7 +8,7 @@ object View2 extends App {
   }.map{ i =>
     println("method2", i)
     i
-  }))
+  }).view.force)
 
   def function(seq: Seq[Int]): Seq[CaseClass] = {
     seq.map(CaseClass)

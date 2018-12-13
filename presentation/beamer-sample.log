@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.25)  13 DEC 2018 00:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.25)  13 DEC 2018 16:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -917,7 +917,7 @@ Overfull \hbox (10.88pt too wide) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (41.56651pt too wide) in paragraph at lines 29--29
+Overfull \hbox (21.41306pt too wide) in paragraph at lines 29--29
  [][]  
  []
 
@@ -1126,27 +1126,27 @@ Overfull \hbox (10.88pt too wide) has occurred while \output is active
 [18
 
 ]
-./beamer-sample.tex:237: Missing \endcsname inserted.
+./beamer-sample.tex:236: Missing \endcsname inserted.
 <to be read again> 
                    \textwidth 
-l.237     \end{frame}
+l.236     \end{frame}
                      
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
-./beamer-sample.tex:237: Missing number, treated as zero.
+./beamer-sample.tex:236: Missing number, treated as zero.
 <to be read again> 
                    \endcsname 
-l.237     \end{frame}
+l.236     \end{frame}
                      
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./beamer-sample.tex:237: Illegal unit of measure (pt inserted).
+./beamer-sample.tex:236: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \endcsname 
-l.237     \end{frame}
+l.236     \end{frame}
                      
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1155,21 +1155,21 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./beamer-sample.tex:237: Extra \endcsname.
+./beamer-sample.tex:236: Extra \endcsname.
 <recently read> \endcsname 
                            
-l.237     \end{frame}
+l.236     \end{frame}
                      
 I'm ignoring this, since I wasn't doing a \csname.
 
 
-./beamer-sample.tex:237: Package keyval Error: \textwidth  undefined.
+./beamer-sample.tex:236: Package keyval Error: \textwidth  undefined.
 
 See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.237     \end{frame}
+l.236     \end{frame}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1181,7 +1181,7 @@ on <1.7>, but at most version <1.5> allowed
 <hierarchy.pdf, id=233, 144.54pt x 139.722pt>
 File: hierarchy.pdf Graphic file (type pdf)
 <use hierarchy.pdf>
-Package pdftex.def Info: hierarchy.pdf  used on input line 237.
+Package pdftex.def Info: hierarchy.pdf  used on input line 236.
 (pdftex.def)             Requested size: 144.53963pt x 139.72165pt.
 
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
@@ -1208,12 +1208,12 @@ Overfull \hbox (10.88pt too wide) has occurred while \output is active
 [20
 
  <./collections-immutable-diagram.pdf>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 255.
+LaTeX Font Info:    Try loading font information for U+msa on input line 254.
 
 (/opt/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 255.
+LaTeX Font Info:    Try loading font information for U+msb on input line 254.
 
 (/opt/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1287,27 +1287,84 @@ Overfull \hbox (10.88pt too wide) has occurred while \output is active
 [29
 
 ]
-./beamer-sample.tex:321: Missing \endcsname inserted.
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[30
+
+] (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[31
+
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[32
+
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[33
+
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[34
+
+]
+\openout4 = `beamer-sample.vrb'.
+
+ (./beamer-sample.vrb)
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[35
+
+]
+./beamer-sample.tex:409: Missing \endcsname inserted.
 <to be read again> 
                    \textwidth 
-l.321     \end{frame}
+l.409     \end{frame}
                      
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
-./beamer-sample.tex:321: Missing number, treated as zero.
+./beamer-sample.tex:409: Missing number, treated as zero.
 <to be read again> 
                    \endcsname 
-l.321     \end{frame}
+l.409     \end{frame}
                      
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./beamer-sample.tex:321: Illegal unit of measure (pt inserted).
+./beamer-sample.tex:409: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \endcsname 
-l.321     \end{frame}
+l.409     \end{frame}
                      
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1316,38 +1373,655 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./beamer-sample.tex:321: Extra \endcsname.
+./beamer-sample.tex:409: Extra \endcsname.
 <recently read> \endcsname 
                            
-l.321     \end{frame}
+l.409     \end{frame}
                      
 I'm ignoring this, since I wasn't doing a \csname.
 
 
-./beamer-sample.tex:321: Package keyval Error: \textwidth  undefined.
+./beamer-sample.tex:409: Package keyval Error: \textwidth  undefined.
 
 See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.321     \end{frame}
+l.409     \end{frame}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<cats.pdf, id=362, 120.45pt x 80.2197pt>
+<cats.pdf, id=424, 120.45pt x 80.2197pt>
 File: cats.pdf Graphic file (type pdf)
 <use cats.pdf>
-Package pdftex.def Info: cats.pdf  used on input line 321.
+Package pdftex.def Info: cats.pdf  used on input line 409.
 (pdftex.def)             Requested size: 120.44969pt x 80.2195pt.
 
 Overfull \hbox (10.88pt too wide) has occurred while \output is active
  []|[]  
  []
 
-[30
+[36
 
  <./cats.pdf>]
+./beamer-sample.tex:417: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.417     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:417: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.417     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:417: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.417     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:417: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.417     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:417: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<foreach_c.pdf, id=438, 142.85371pt x 87.2058pt>
+File: foreach_c.pdf Graphic file (type pdf)
+<use foreach_c.pdf>
+Package pdftex.def Info: foreach_c.pdf  used on input line 417.
+(pdftex.def)             Requested size: 142.85335pt x 87.20557pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[37
+
+ <./foreach_c.pdf>]
+./beamer-sample.tex:425: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.425     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:425: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.425     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:425: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.425     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:425: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.425     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:425: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<map_c.pdf, id=454, 142.13101pt x 86.724pt>
+File: map_c.pdf Graphic file (type pdf)
+<use map_c.pdf>
+Package pdftex.def Info: map_c.pdf  used on input line 425.
+(pdftex.def)             Requested size: 142.13065pt x 86.72377pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[38
+
+ <./map_c.pdf>]
+./beamer-sample.tex:433: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.433     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:433: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.433     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:433: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.433     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:433: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.433     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:433: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.433     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<viewmap_c.pdf, id=469, 141.40831pt x 86.724pt>
+File: viewmap_c.pdf Graphic file (type pdf)
+<use viewmap_c.pdf>
+Package pdftex.def Info: viewmap_c.pdf  used on input line 433.
+(pdftex.def)             Requested size: 141.40794pt x 86.72377pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[39
+
+ <./viewmap_c.pdf>]
+./beamer-sample.tex:441: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.441     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:441: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.441     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:441: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.441     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:441: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.441     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:441: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.441     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<viewmap_one_c.pdf, id=484, 142.3719pt x 86.724pt>
+File: viewmap_one_c.pdf Graphic file (type pdf)
+<use viewmap_one_c.pdf>
+Package pdftex.def Info: viewmap_one_c.pdf  used on input line 441.
+(pdftex.def)             Requested size: 142.37154pt x 86.72377pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[40
+
+ <./viewmap_one_c.pdf>]
+./beamer-sample.tex:449: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.449     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:449: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.449     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:449: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.449     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:449: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.449     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:449: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<parmap_c.pdf, id=499, 141.40831pt x 87.2058pt>
+File: parmap_c.pdf Graphic file (type pdf)
+<use parmap_c.pdf>
+Package pdftex.def Info: parmap_c.pdf  used on input line 449.
+(pdftex.def)             Requested size: 141.40794pt x 87.20557pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[41
+
+ <./parmap_c.pdf>]
+./beamer-sample.tex:457: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.457     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:457: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.457     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:457: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.457     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:457: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.457     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:457: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.457     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<foreach.pdf, id=515, 142.85371pt x 87.4467pt>
+File: foreach.pdf Graphic file (type pdf)
+<use foreach.pdf>
+Package pdftex.def Info: foreach.pdf  used on input line 457.
+(pdftex.def)             Requested size: 142.85335pt x 87.44647pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[42
+
+ <./foreach.pdf>]
+./beamer-sample.tex:465: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.465     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:465: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.465     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:465: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.465     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:465: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.465     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:465: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.465     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<map.pdf, id=530, 143.0946pt x 87.2058pt>
+File: map.pdf Graphic file (type pdf)
+<use map.pdf>
+Package pdftex.def Info: map.pdf  used on input line 465.
+(pdftex.def)             Requested size: 143.09424pt x 87.20557pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[43
+
+ <./map.pdf>]
+./beamer-sample.tex:473: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.473     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:473: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.473     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:473: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.473     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:473: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.473     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:473: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.473     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<viewmap.pdf, id=546, 142.13101pt x 87.6876pt>
+File: viewmap.pdf Graphic file (type pdf)
+<use viewmap.pdf>
+Package pdftex.def Info: viewmap.pdf  used on input line 473.
+(pdftex.def)             Requested size: 142.13065pt x 87.68738pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[44
+
+ <./viewmap.pdf>]
+./beamer-sample.tex:481: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.481     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:481: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.481     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:481: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.481     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:481: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.481     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:481: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.481     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<viewmap_one.pdf, id=561, 141.6492pt x 86.9649pt>
+File: viewmap_one.pdf Graphic file (type pdf)
+<use viewmap_one.pdf>
+Package pdftex.def Info: viewmap_one.pdf  used on input line 481.
+(pdftex.def)             Requested size: 141.64883pt x 86.96468pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[45
+
+ <./viewmap_one.pdf>]
+./beamer-sample.tex:489: Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.489     \end{frame}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./beamer-sample.tex:489: Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.489     \end{frame}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./beamer-sample.tex:489: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.489     \end{frame}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./beamer-sample.tex:489: Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.489     \end{frame}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./beamer-sample.tex:489: Package keyval Error: \textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.489     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<parmap.pdf, id=576, 141.40831pt x 87.9285pt>
+File: parmap.pdf Graphic file (type pdf)
+<use parmap.pdf>
+Package pdftex.def Info: parmap.pdf  used on input line 489.
+(pdftex.def)             Requested size: 141.40794pt x 87.92827pt.
+
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[46
+
+ <./parmap.pdf>]
+Overfull \hbox (10.88pt too wide) has occurred while \output is active
+ []|[]  
+ []
+
+[47
+
+]
 \tf@nav=\write7
 \openout7 = `beamer-sample.nav'.
 
@@ -1357,19 +2031,19 @@ Overfull \hbox (10.88pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `beamer-sample.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 499.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 499.
  (./beamer-sample.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 499.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 499.
 Package rerunfilecheck Info: File `beamer-sample.out' has not changed.
 (rerunfilecheck)             Checksum: 8DA7B1A80574D60E12FDC787BA453489;187.
  ) 
 Here is how much of TeX's memory you used:
- 21253 strings out of 494085
- 408580 string characters out of 6165330
- 500982 words of memory out of 5000000
- 24346 multiletter control sequences out of 15000+600000
+ 21380 strings out of 494085
+ 410388 string characters out of 6165330
+ 500984 words of memory out of 5000000
+ 24418 multiletter control sequences out of 15000+600000
  15887 words of font info for 43 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  50i,16n,76p,780b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1385,10 +2059,10 @@ ec/ecsx1440.600pk></opt/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmmi10.pfb></opt/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
 fb></opt/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></op
 t/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on beamer-sample.pdf (30 pages, 530561 bytes).
+Output written on beamer-sample.pdf (47 pages, 680307 bytes).
 PDF statistics:
- 619 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 859 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

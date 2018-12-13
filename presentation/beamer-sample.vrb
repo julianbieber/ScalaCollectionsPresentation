@@ -1,9 +1,13 @@
-\frametitle{Scala SeqView}
-\begin{itemize}
-            \item Signature: SeqView[+A, +Coll]
-            \item Represents a view to Coll[+A]
-            \item chaining maps without creating new collections
-            \item $\Rightarrow$ less memory consumption \pause
-            \item $\Rightarrow$ less GC activity \pause
-            \item $\Rightarrow$ faster
-        \end{itemize}
+\frametitle{SeqView}
+\begin{Verbatim}[formatcom=\sffamily]
+(method1,1)
+(method2,1)
+(CaseClass,1)
+(method1,2)
+(method2,2)
+(CaseClass,2)
+(method1,3)
+(method2,3)
+(CaseClass,3)
+List(CaseClass(1), CaseClass(2), CaseClass(3))
+        \end{Verbatim}
